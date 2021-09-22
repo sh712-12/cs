@@ -50,7 +50,7 @@ print(f'sum of even = {ev}, product of odd = {od}')
 n=input('enter a nummber: ')
 a=0
 for i in range(len(n)):
-    if n[i] == n[-1+(-1*i)]:
+    if n[i] == n[-1-i]:
        a=1
     else:
         a=0 
