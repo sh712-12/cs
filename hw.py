@@ -15,24 +15,22 @@ print(f'sum of digits is : {a}')
 
 #largest digit:
 '''
-n=int(input('enter a number: '))
-rn=0
-while n>0:
-    r=n%10
-    n//=10
-    rn = rn*10 + r
-print(f'smallest digit is {str(rn)[-1]}')
+n=input('enter a number: ')
+ for i in range(len(n)):
+     for j in range(i, len(n)):
+         if int(n[i]) > int(n[j]):
+             n[i], n[j] = n[j], n[i]
+ print(int(n[-1]))
 '''
 
 #smallest digit:
 '''
-n=int(input('enter a number: '))
-rn=0
-while n>0:
-    r=n%10
-    n//=10
-    rn = rn*10 + r
-print(f'smallest digit is {str(rn)[0]}')
+n=input('enter a number: ')
+ for i in range(len(n)):
+     for j in range(i, len(n)):
+         if int(n[i]) > int(n[j]):
+             n[i], n[j] = n[j], n[i]
+ print(int(n[0]))
 ''' 
 
 #sum of even digts and product of odd digits: 
