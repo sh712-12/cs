@@ -53,7 +53,8 @@ for i in range(len(n)):
     if n[i] == n[-1-i]:
        a=1
     else:
-        a=0 
+        a=0
+        break
 if a==1:
     print('yes')
 else:
