@@ -16,21 +16,25 @@ print(f'sum of digits is : {a}')
 #largest digit:
 '''
 n=input('enter a number: ')
- for i in range(len(n)):
-     for j in range(i, len(n)):
-         if int(n[i]) > int(n[j]):
-             n[i], n[j] = n[j], n[i]
- print(int(n[-1]))
+a=0
+while n>0:
+    r=n%10
+    n//=10
+    if r>a:
+        a=r
+print(a)
 '''
 
 #smallest digit:
 '''
 n=input('enter a number: ')
- for i in range(len(n)):
-     for j in range(i, len(n)):
-         if int(n[i]) > int(n[j]):
-             n[i], n[j] = n[j], n[i]
- print(int(n[0]))
+a=9
+while n>0:
+    r=n%10
+    n//=10
+    if r<a:
+        a=r
+print(a)
 ''' 
 
 #sum of even digts and product of odd digits: 
@@ -48,14 +52,13 @@ print(f'sum of even = {ev}, product of odd = {od}')
 #if number is palindrome or not
 '''
 n=input('enter a nummber: ')
-a=0
-for i in range(len(n)):
-    if n[i] == n[-1-i]:
-       a=1
-    else:
-        a=0
-        break
-if a==1:
+a=n
+rn=0
+while n>0:
+    r=n%10
+    n//=10
+    rn=r+rn*10
+if a==rn:
     print('yes')
 else:
     print('no')
