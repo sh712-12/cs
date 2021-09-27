@@ -1,7 +1,7 @@
 #number of digits: 
 '''
-n=input('enter a number: ')
-print(f'number of digits are: {len(n)}')
+n=int(input('enter a number: '))
+print(f'number of digits are: {len(str(n))}')
 '''
 
 #sum of digits:
