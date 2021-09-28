@@ -103,3 +103,20 @@ else:
         k+=1
     print(f'LCM of the 3 numbers is {nums[2]*k}')
 '''
+
+'''
+#prime numbers in a range:
+
+l,u = int(input('enter lower limit: ')), int(input('enter upper limit: '))
+for i in range(l, u):  
+  t=1
+  for j in range(2,i//2):
+      if i%j==0:
+        t=0
+        break
+     
+  if t:
+    if i!=1 and i!=0:
+      print(i)
+
+'''
