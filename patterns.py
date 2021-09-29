@@ -41,6 +41,8 @@ for i in range(0, n):
 '''
 
 '''
+#diamond pattern
+
 n=int(input('enter a number: '))
 for i in range(1,n):
   print(' '*(n-i), end=' ')
