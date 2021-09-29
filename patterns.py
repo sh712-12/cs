@@ -39,3 +39,18 @@ for i in range(0, n):
     print(l[i], end=' ')
   print()
 '''
+
+'''
+n=int(input('enter a number: '))
+for i in range(1,n):
+  print(' '*(n-i), end=' ')
+  for j in range(1, i+1):
+    print(i, end=' ')
+  print()
+
+for k in range(n-2,0,-1):
+  print(' '*(n-k), end=' ')
+  for l in range(k+1,1,-1):
+    print(k, end=' ')
+  print()
+'''
