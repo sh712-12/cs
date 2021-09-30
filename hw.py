@@ -120,3 +120,30 @@ for i in range(l, u):
       print(i)
 
 '''
+
+'''
+#marks for students and class...
+
+marks_subjects = {}
+students = int(input('enter the number of students: '))
+
+for i in range(1,students+1):
+
+    no_of_subjects = int(input(f'\nenter the number of subjects for student{i}: '))
+
+    subjects = [input(f'\n\tenter name of subject {j} for student {i}: ') for j in range(1,no_of_subjects+1)]
+    a=0
+    for k in subjects:
+        marks_in_k = int(input(f'\n\t\tenter number of marks obtained by student {i} in {k}: '))
+        if k not in marks_subjects:
+            marks_subjects[k] = 0
+        marks_subjects[k] += marks_in_k
+        a+=marks_in_k
+    
+    print(f'\n\t\ttotal marks for student {i} are: {a}')
+    
+#print(marks_subjects)
+
+for l in marks_subjects.keys():
+    print(f'\n\ntotal marks of the class in {l} are {marks_subjects[l]}')
+'''
