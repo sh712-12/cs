@@ -104,9 +104,8 @@ else:
     print(f'LCM of the 3 numbers is {nums[2]*k}')
 '''
 
+#marks for students in class...
 '''
-#prime numbers in a range:
-
 l,u = int(input('enter lower limit: ')), int(input('enter upper limit: '))
 for i in range(l, u):  
   t=1
