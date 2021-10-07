@@ -147,8 +147,8 @@ for l in marks_subjects.keys():
     print(f'\n\ntotal marks of the class in {l} are {marks_subjects[l]}')
 '''
 
-'''
 #count function:
+'''
 
 s=input('enter a string: ')
 substr = input('enter substring you want to find: ')
