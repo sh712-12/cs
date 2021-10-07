@@ -146,3 +146,17 @@ for i in range(1,students+1):
 for l in marks_subjects.keys():
     print(f'\n\ntotal marks of the class in {l} are {marks_subjects[l]}')
 '''
+
+'''
+#count function:
+
+s=input('enter a string: ')
+substr = input('enter substring you want to find: ')
+count=0
+for i in range(len(s)):
+    if s[i:i+len(substr)] == substr:
+        count+=1
+print(count)
+'''
+
+
