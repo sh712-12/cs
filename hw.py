@@ -149,7 +149,6 @@ for l in marks_subjects.keys():
 
 #count function:
 '''
-
 s=input('enter a string: ')
 substr = input('enter substring you want to find: ')
 count=0
@@ -159,4 +158,22 @@ for i in range(len(s)):
 print(count)
 '''
 
+#implement replace:
+'''
+s=input('enter a string: ')
+replace=input('replace what: ')
+replace_with=input('replace with: ')
+
+a=s.count(replace)
+ans=s
+#print(a)
+while a!=0:
+
+    j=ans.find(replace)
+    #print(j)
+    ans=ans[:j] + replace_with + ans[j+len(replace):len(ans)]
+    a-=1
+
+print(ans)
+'''
 
