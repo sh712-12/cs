@@ -177,3 +177,19 @@ while a!=0:
 print(ans)
 '''
 
+#number of occurences of each element in a list:
+'''
+n=int(input('enter the number of elements in list: '))
+l = [int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+
+digits_value={}
+
+for j in l:
+    if j not in digits_value:
+        digits_value[j]=0
+    digits_value[j]+=1
+
+print()
+for k in digits_value.keys():
+    print(f'number {k} occurs {digits_value[k]} times in the list')
+'''
