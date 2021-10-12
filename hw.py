@@ -193,3 +193,21 @@ print()
 for k in digits_value.keys():
     print(f'number {k} occurs {digits_value[k]} times in the list')
 '''
+
+#smallest and largest elements in a list wihtout function:
+'''
+n=int(input('enter number of elements in list: '))
+l =[int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+
+a=0
+for j in l:
+    if j>a:
+        a=j
+b=a
+for k in l:
+    if k<b:
+        b=k
+
+print(f'smallest element is {b}')
+print(f'largest element is: {a}')
+'''
