@@ -211,3 +211,25 @@ for k in l:
 print(f'smallest element is {b}')
 print(f'largest element is: {a}')
 '''
+
+#reverse list:
+'''
+n=int(input('enter number of elements in list: '))
+l =[int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+
+for j  in range(0,n//2):
+    l[j], l[-j-1] = l[-j-1], l[j]
+
+print(l)
+'''
+
+#swap adjacent elements of a list
+'''
+n=int(input('enter number of elements in list: '))
+l =[int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+
+for i in range(len(l)//2 + 1):
+    l[i], l[i+1] = l[i+1], l[i]
+
+print(l)
+'''
