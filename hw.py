@@ -233,3 +233,43 @@ for i in range(len(l)//2 + 1):
 
 print(l)
 '''
+
+#make 2 lists of elements with multiple occurences and single occurence in a given list
+'''
+n=int(input('enter number of elements in list: '))
+l=[int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+multiple_elements = []
+single_element = []
+digits_value={}
+
+for j in l:
+    if j not in digits_value:
+        digits_value[j]=0
+    digits_value[j]+=1
+
+for k in digits_value.keys():
+    if digits_value[k] > 1:
+        multiple_elements.append(k)
+    else:
+        single_element.append(k)
+
+print(f'list of multiple elemetnst is : {multiple_elements}')
+print(f'list of single elements is : {single_element}')
+'''
+
+#same thing but with lists:
+'''
+n=int(input('enter number of elements in list: '))
+l=[int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+
+multiple_elements=[]
+multiple_elememts_multiple=[l[i] for i in range(len(l)) if l[i] in l[i+1:]+l[:i]]
+for j in multiple_elememts_multiple:
+    if j not in multiple_elements:
+        multiple_elements.append(j)
+
+single_elements=[l[i] for i in range(len(l)) if l[i] not in l[i+1:]+l[:i]]
+
+print(multiple_elements)
+print(single_elements)
+'''
