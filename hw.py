@@ -227,11 +227,13 @@ print(l)
 '''
 n=int(input('enter number of elements in list: '))
 l =[int(input(f'enter {i+1} element of list: ')) for i in range(n)]
+if n%2==0:
+    for i in range(0,len(l),2):
+        l[i], l[i+1] = l[i+1], l[i]
+    print(l)
+else:
+    print('list has odd elements')
 
-for i in range(len(l)//2 + 1):
-    l[i], l[i+1] = l[i+1], l[i]
-
-print(l)
 '''
 
 #make 2 lists of elements with multiple occurences and single occurence in a given list
