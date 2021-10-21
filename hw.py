@@ -275,3 +275,30 @@ single_elements=[l[i] for i in range(len(l)) if l[i] not in l[i+1:]+l[:i]]
 print(multiple_elements)
 print(single_elements)
 '''
+
+#bubble sort:
+'''
+l = [7,6,5,3,7,4]
+for i in range(len(l)):
+    for j in range(i, len(l)):
+        if l[i]>l[j]:
+            l[i], l[j] = l[j], l[i]
+print(l)
+'''
+
+#implement insert() function but insert in ascending order:
+'''
+l=[4,5,8,9]
+a=int(input('enter element to be inserted: '))
+if a>l[-1]:
+    l = l + [a]
+elif a<l[0]:
+    l = [a] + l
+else:
+    for i in range(len(l)):
+        if a>l[i] and a<l[i+1]:
+            l = l[:i+1] + [a] + l[i+1:]
+            break
+print(l)
+'''
+
